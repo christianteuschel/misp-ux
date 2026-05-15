@@ -44,27 +44,6 @@ Derived artifacts include six grounded personas, seven operational use cases, a 
 
 ---
 
-## Key Findings
-
-1. **First-run experience drives users away.** Six of nine interviewees described being overwhelmed on first use. One user abandoned MISP entirely on day one despite it meeting all their feature requirements. The biggest lever here is progressive onboarding and in-context help.
-
-2. **The basic IOC ingestion path has too much friction.** The most frequent MISP workflow — taking unstructured data (e.g., a phishing email) and creating a structured event — requires manual copy-paste, loses data between preview and edit views, and uses confusing field names (`Description` is actually the event name). This affects daily users most directly.
-
-3. **Documentation is scattered and hard to navigate.** Nearly every interviewee mentioned this. There is no single entry point for new users, no architectural overview, and no examples-first PyMISP guide. Configuration endpoints can take hours to locate.
-
----
-
-## Notable Gaps vs. Official Documentation
-
-| Gap | Detail |
-|---|---|
-| **Operator / Deployment Engineer (P5)** | Completely absent from the official persona set. Covers installation, Docker/LXC configuration, admin views, and air-gapped deployments. |
-| **Newcomer (P6)** | Also absent. Represents users who arrive with a small, concrete goal and form a lasting first impression within minutes — a strategically critical persona for adoption. |
-| **Deployment & operations (UC6)** | No official user stories address the operational lifecycle of running a MISP instance. |
-| **Detection-rule integration (UC5)** | Using MISP to author, store, and link detection rules (Wazuh, Sigma, etc.) has no coverage in the official story set. |
-
----
-
 ## License
 
 This work is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE). You are free to share and adapt the material for any purpose, provided appropriate credit is given.
